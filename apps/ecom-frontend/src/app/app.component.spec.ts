@@ -8,8 +8,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterModule, NavbarComponent, FooterComponent],
-      declarations: [AppComponent],
+      imports: [RouterModule, NavbarComponent, FooterComponent,AppComponent],
       providers: [
         { provide: FaConfig, useValue: { defaultPrefix: '' } },
         { provide: FaIconLibrary, useValue: { addIcons: jest.fn() } },
