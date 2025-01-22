@@ -2,7 +2,7 @@
     <div class="navbar-start">
         <div class="dropdown">
             <a href="" class="btn btn-ghost text-xl">
-                <div class="border-1 bg-secoondary logo p-2" routerLink="/">EC</div>
+                <div class="border-1 bg-secoondary logo p-2 rounded-xl" routerLink="/">EC</div>
             </a>
         </div>
     </div>
@@ -10,6 +10,16 @@
         <div class="menu menu-sm sm:menu-lg menu-horizontal px-1">
             <li>
                 <a href="/">Home</a>
+            </li>
+            <li>
+                <details #productMenu>
+                    <summary>Product</summary>
+                    <ul class="z-30">
+                        <li>
+                            <a href="/products">All</a>
+                        </li>
+                    </ul>
+                </details>
             </li>
             <li>
                 <details #adminMenu>
@@ -28,7 +38,7 @@
             <div tabindex="0" role="button">
                 <fa-icon [icon]="['fas', 'user']" class="menu-icon"></fa-icon>
             </div>
-            <ul class="dropdown-content menu menu-lg bg-base-100 round-box z-10 w-52 p-2 shadow">
+            <ul class="dropdown-content menu menu-lg bg-base-100 rounded-box z-10 w-52 p-2 shadow">
                 <li>
                     <button class="link">Login</button>
                 </li>
